@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+    <item id="Title"><![CDATA[Discuz! Plugin]]></item>
+    <item id="Version"><![CDATA[X3.4]]></item>
+    <item id="Time"><![CDATA[2018-03-09 21:44]]></item>
+    <item id="From"><![CDATA[Ganlv (https://www.52pojie.cn/home.php?mod=space&uid=765171)]]></item>
+    <item id="Data">
+        <item id="plugin">
+            <item id="available"><![CDATA[0]]></item>
+            <item id="adminid"><![CDATA[1]]></item>
+            <item id="name"><![CDATA[自定义论坛导读]]></item>
+            <item id="identifier"><![CDATA[diy_forum_guide]]></item>
+            <item id="description"><![CDATA[在 forum.php?mod=guide 中添加新的分类]]></item>
+            <item id="datatables"><![CDATA[]]></item>
+            <item id="directory"><![CDATA[diy_forum_guide/]]></item>
+            <item id="copyright"><![CDATA[Ganlv]]></item>
+            <item id="__modules">
+                <item id="0">
+                    <item id="name"><![CDATA[diy_forum_guide]]></item>
+                    <item id="menu"><![CDATA[]]></item>
+                    <item id="url"><![CDATA[]]></item>
+                    <item id="type"><![CDATA[11]]></item>
+                    <item id="adminid"><![CDATA[0]]></item>
+                    <item id="displayorder"><![CDATA[0]]></item>
+                    <item id="navtitle"><![CDATA[]]></item>
+                    <item id="navicon"><![CDATA[]]></item>
+                    <item id="navsubname"><![CDATA[]]></item>
+                    <item id="navsuburl"><![CDATA[]]></item>
+                </item>
+                <item id="1">
+                    <item id="name"><![CDATA[diy_forum_guide]]></item>
+                    <item id="param"><![CDATA[]]></item>
+                    <item id="menu"><![CDATA[]]></item>
+                    <item id="url"><![CDATA[]]></item>
+                    <item id="type"><![CDATA[28]]></item>
+                    <item id="adminid"><![CDATA[0]]></item>
+                    <item id="displayorder"><![CDATA[0]]></item>
+                    <item id="navtitle"><![CDATA[]]></item>
+                    <item id="navicon"><![CDATA[]]></item>
+                    <item id="navsubname"><![CDATA[]]></item>
+                    <item id="navsuburl"><![CDATA[]]></item>
+                </item>
+            </item>
+            <item id="version"><![CDATA[0.1]]></item>
+        </item>
+        <item id="version"><![CDATA[X3.4]]></item>
+        <item id="var">
+            <item id="0">
+                <item id="displayorder"><![CDATA[0]]></item>
+                <item id="title"><![CDATA[是否已改 forum_guide.php]]></item>
+                <item id="description"><![CDATA[为了更好的兼容性，您最好按照本插件目录下的 install.php 中的几行代码添加到 ./source/module/forum/forum_guide.php 中 if (!defined('IN_DISCUZ')) { exit('Access Denied'); } 之后。如果您的服务器允许写入文件的话，这个操作在安装时会在安装插件时自动进行，这个设置会自动设置为“是”，如果在安装时出现了错误提示，您必须手动修改文件，然后手动修改这个设置。当然，如果不修改文件或不修改这个设置的话，插件仍然可以运行，只是有可能出现未知的兼容性问题。]]></item>
+                <item id="variable"><![CDATA[forum_guide_php_edited]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="1">
+                <item id="displayorder"><![CDATA[1]]></item>
+                <item id="title"><![CDATA[导读1标题]]></item>
+                <item id="description"><![CDATA[支持 [color][b][s][i][u]]]></item>
+                <item id="variable"><![CDATA[view_0_title]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="2">
+                <item id="displayorder"><![CDATA[2]]></item>
+                <item id="title"><![CDATA[导读1描述]]></item>
+                <item id="description"><![CDATA[类似于版块描述、版规等，支持 [color][b][s][i][u] 基础代码以及 [size][url][img] 等高级 discuz 代码]]></item>
+                <item id="variable"><![CDATA[view_0_description]]></item>
+                <item id="type"><![CDATA[textarea]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="3">
+                <item id="displayorder"><![CDATA[3]]></item>
+                <item id="title"><![CDATA[导读1 URL 标签]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_0_permalink]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="4">
+                <item id="displayorder"><![CDATA[4]]></item>
+                <item id="title"><![CDATA[导读1板块]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_0_forums]]></item>
+                <item id="type"><![CDATA[forums]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="5">
+                <item id="displayorder"><![CDATA[5]]></item>
+                <item id="title"><![CDATA[导读1仅热门]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_0_hot]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="6">
+                <item id="displayorder"><![CDATA[6]]></item>
+                <item id="title"><![CDATA[导读1仅精华]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_0_digest]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="7">
+                <item id="displayorder"><![CDATA[7]]></item>
+                <item id="title"><![CDATA[导读1排序规则]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_0_orderby]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[newthread]]></item>
+                <item id="extra"><![CDATA[newthread=最新主题
+reply=最新回复
+lastpost=最新发表]]></item>
+            </item>
+            <item id="8">
+                <item id="displayorder"><![CDATA[8]]></item>
+                <item id="title"><![CDATA[导读1数量限制]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_0_limit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[600]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="9">
+                <item id="displayorder"><![CDATA[9]]></item>
+                <item id="title"><![CDATA[导读1时间限制]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_0_dt]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[604800]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="10">
+                <item id="displayorder"><![CDATA[10]]></item>
+                <item id="title"><![CDATA[导读1缓存更新间隔]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_0_cachetimelimit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[900]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="11">
+                <item id="displayorder"><![CDATA[11]]></item>
+                <item id="title"><![CDATA[导读2标题]]></item>
+                <item id="description"><![CDATA[支持 [color][b][s][i][u]]]></item>
+                <item id="variable"><![CDATA[view_1_title]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="12">
+                <item id="displayorder"><![CDATA[12]]></item>
+                <item id="title"><![CDATA[导读2描述]]></item>
+                <item id="description"><![CDATA[类似于版块描述、版规等，支持 [color][b][s][i][u] 基础代码以及 [size][url][img] 等高级 discuz 代码]]></item>
+                <item id="variable"><![CDATA[view_1_description]]></item>
+                <item id="type"><![CDATA[textarea]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="13">
+                <item id="displayorder"><![CDATA[13]]></item>
+                <item id="title"><![CDATA[导读2 URL 标签]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_1_permalink]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="14">
+                <item id="displayorder"><![CDATA[14]]></item>
+                <item id="title"><![CDATA[导读2板块]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_1_forums]]></item>
+                <item id="type"><![CDATA[forums]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="15">
+                <item id="displayorder"><![CDATA[15]]></item>
+                <item id="title"><![CDATA[导读2仅热门]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_1_hot]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="16">
+                <item id="displayorder"><![CDATA[16]]></item>
+                <item id="title"><![CDATA[导读2仅精华]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_1_digest]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="17">
+                <item id="displayorder"><![CDATA[17]]></item>
+                <item id="title"><![CDATA[导读2排序规则]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_1_orderby]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[newthread]]></item>
+                <item id="extra"><![CDATA[newthread=最新主题
+reply=最新回复
+lastpost=最新发表]]></item>
+            </item>
+            <item id="18">
+                <item id="displayorder"><![CDATA[18]]></item>
+                <item id="title"><![CDATA[导读2数量限制]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_1_limit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[600]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="19">
+                <item id="displayorder"><![CDATA[19]]></item>
+                <item id="title"><![CDATA[导读2时间限制]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_1_dt]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[604800]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="20">
+                <item id="displayorder"><![CDATA[20]]></item>
+                <item id="title"><![CDATA[导读2缓存更新间隔]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_1_cachetimelimit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[900]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="21">
+                <item id="displayorder"><![CDATA[21]]></item>
+                <item id="title"><![CDATA[导读3标题]]></item>
+                <item id="description"><![CDATA[支持 [color][b][s][i][u]]]></item>
+                <item id="variable"><![CDATA[view_2_title]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="22">
+                <item id="displayorder"><![CDATA[22]]></item>
+                <item id="title"><![CDATA[导读3描述]]></item>
+                <item id="description"><![CDATA[类似于版块描述、版规等，支持 [color][b][s][i][u] 基础代码以及 [size][url][img] 等高级 discuz 代码]]></item>
+                <item id="variable"><![CDATA[view_2_description]]></item>
+                <item id="type"><![CDATA[textarea]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="23">
+                <item id="displayorder"><![CDATA[23]]></item>
+                <item id="title"><![CDATA[导读3 URL 标签]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_2_permalink]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="24">
+                <item id="displayorder"><![CDATA[24]]></item>
+                <item id="title"><![CDATA[导读3板块]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_2_forums]]></item>
+                <item id="type"><![CDATA[forums]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="25">
+                <item id="displayorder"><![CDATA[25]]></item>
+                <item id="title"><![CDATA[导读3仅热门]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_2_hot]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="26">
+                <item id="displayorder"><![CDATA[26]]></item>
+                <item id="title"><![CDATA[导读3仅精华]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_2_digest]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="27">
+                <item id="displayorder"><![CDATA[27]]></item>
+                <item id="title"><![CDATA[导读3排序规则]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_2_orderby]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[newthread]]></item>
+                <item id="extra"><![CDATA[newthread=最新主题
+reply=最新回复
+lastpost=最新发表]]></item>
+            </item>
+            <item id="28">
+                <item id="displayorder"><![CDATA[28]]></item>
+                <item id="title"><![CDATA[导读3数量限制]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_2_limit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[600]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="29">
+                <item id="displayorder"><![CDATA[29]]></item>
+                <item id="title"><![CDATA[导读3时间限制]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_2_dt]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[604800]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="30">
+                <item id="displayorder"><![CDATA[30]]></item>
+                <item id="title"><![CDATA[导读3缓存更新间隔]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_2_cachetimelimit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[900]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="31">
+                <item id="displayorder"><![CDATA[31]]></item>
+                <item id="title"><![CDATA[导读4标题]]></item>
+                <item id="description"><![CDATA[支持 [color][b][s][i][u]]]></item>
+                <item id="variable"><![CDATA[view_3_title]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="32">
+                <item id="displayorder"><![CDATA[32]]></item>
+                <item id="title"><![CDATA[导读4描述]]></item>
+                <item id="description"><![CDATA[类似于版块描述、版规等，支持 [color][b][s][i][u] 基础代码以及 [size][url][img] 等高级 discuz 代码]]></item>
+                <item id="variable"><![CDATA[view_3_description]]></item>
+                <item id="type"><![CDATA[textarea]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="33">
+                <item id="displayorder"><![CDATA[33]]></item>
+                <item id="title"><![CDATA[导读4 URL 标签]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_3_permalink]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="34">
+                <item id="displayorder"><![CDATA[34]]></item>
+                <item id="title"><![CDATA[导读4板块]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_3_forums]]></item>
+                <item id="type"><![CDATA[forums]]></item>
+                <item id="value"><![CDATA[]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="35">
+                <item id="displayorder"><![CDATA[35]]></item>
+                <item id="title"><![CDATA[导读4仅热门]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_3_hot]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="36">
+                <item id="displayorder"><![CDATA[36]]></item>
+                <item id="title"><![CDATA[导读4仅精华]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_3_digest]]></item>
+                <item id="type"><![CDATA[radio]]></item>
+                <item id="value"><![CDATA[0]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="37">
+                <item id="displayorder"><![CDATA[37]]></item>
+                <item id="title"><![CDATA[导读4排序规则]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_3_orderby]]></item>
+                <item id="type"><![CDATA[select]]></item>
+                <item id="value"><![CDATA[newthread]]></item>
+                <item id="extra"><![CDATA[newthread=最新主题
+reply=最新回复
+lastpost=最新发表]]></item>
+            </item>
+            <item id="38">
+                <item id="displayorder"><![CDATA[38]]></item>
+                <item id="title"><![CDATA[导读4数量限制]]></item>
+                <item id="description"><![CDATA[]]></item>
+                <item id="variable"><![CDATA[view_3_limit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[600]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="39">
+                <item id="displayorder"><![CDATA[39]]></item>
+                <item id="title"><![CDATA[导读4时间限制]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_3_dt]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[604800]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+            <item id="40">
+                <item id="displayorder"><![CDATA[40]]></item>
+                <item id="title"><![CDATA[导读4缓存更新间隔]]></item>
+                <item id="description"><![CDATA[单位是秒，一天为86400，一周是604800，一个月是2592000，一年是31536000]]></item>
+                <item id="variable"><![CDATA[view_3_cachetimelimit]]></item>
+                <item id="type"><![CDATA[text]]></item>
+                <item id="value"><![CDATA[900]]></item>
+                <item id="extra"><![CDATA[]]></item>
+            </item>
+        </item>
+        <item id="installfile"><![CDATA[install.php]]></item>
+        <item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+    </item>
+</root>
